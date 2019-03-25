@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link href="/style/index.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700" media="all">
+  <title>New poll</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0" />
+</head>
+<body>
+  <div class="page">
+    <div class="page__content page__content--padding">
+      <form
+        class="poll"
+        method="post"
+        action="/"
+      >
+        <table class="poll-table">
+          <thead>
+          <tr>
+            <th>Question:</th>
+            <th>
+              <input
+                type="text"
+                name="question"
+                placeholder="Enter question text"
+                class="input-text"
+                required
+              />
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>Answer 1:</th>
+            <td>
+              <input
+                type="text"
+                name="answer1"
+                placeholder="Enter answer option"
+                class="input-text"
+                required
+              />
+            </td>
+            <td>
+              <button
+                class="btn btn--times xxx"
+                type="button"
+                title="Remove answer option"
+              >&times;
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th>Answer 2:</th>
+            <td>
+              <input
+                type="text"
+                name="answer2"
+                placeholder="Enter answer option"
+                class="input-text"
+                required
+              />
+            </td>
+            <td>
+              <button
+                class="btn btn--times"
+                type="button"
+                title="Remove answer option"
+              >&times;
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="poll-table__plus">
+              <button
+                class="btn btn--plus"
+                type="button"
+                title="Add answer option"
+              >+
+              </button>
+            </td>
+            <td> </td>
+          </tr>
+          </tbody>
+        </table>
+        <button
+          class="btn btn--start"
+          title="Start polling"
+        >
+          Start
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="/newPoll/index.js"></script>
+</body>
+</html>
